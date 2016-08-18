@@ -37,7 +37,6 @@ static NSUInteger numberOfIterations = 2500;
     XCTAssertNil([db objectForKey:@"array1"], @"A key that was deleted in batch should return nil");
 }
 
-/*
 - (void)testKeysManipulation {
     id value = @{@"foo": @"bar"};
     
@@ -494,6 +493,6 @@ static NSUInteger numberOfIterations = 2500;
                              }];
     
     [db removeAllObjects];
-}*/
+}
 
 @end

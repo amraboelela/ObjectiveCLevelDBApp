@@ -10,11 +10,10 @@
 		0C0A94111D65329200E00B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A940F1D65329200E00B3E /* LaunchScreen.storyboard */; };
 		0C0A94121D65329200E00B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A94101D65329200E00B3E /* Main.storyboard */; };
 		0C0A94151D65330F00E00B3E /* BaseTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94141D65330F00E00B3E /* BaseTestClass.m */; };
-		0C0A94291D65366400E00B3E /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94281D65366400E00B3E /* MainTests.m */; };
 		0C0A94381D653A3100E00B3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DF1D652EFB0087AD72 /* ViewController.m */; };
-		0C0A943C1D653A8800E00B3E /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A943A1D653A8800E00B3E /* Dummy.cpp */; };
 		0C0A943F1D653B1400E00B3E /* libCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943D1D653B1400E00B3E /* libCLevelDB.a */; };
 		0C0A94401D653B1400E00B3E /* libObjectiveCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */; };
+		0C0A94461D65546900E00B3E /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94281D65366400E00B3E /* MainTests.m */; };
 		0C8B23CD1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */; };
 		0C8B23E01D652EFB0087AD72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23D91D652EFB0087AD72 /* AppDelegate.m */; };
 		0C8B23E31D652EFB0087AD72 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B23DC1D652EFB0087AD72 /* Info.plist */; };
@@ -41,6 +40,7 @@
 		0C0A943B1D653A8800E00B3E /* Dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
 		0C0A943D1D653B1400E00B3E /* libCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libCLevelDB.a"; sourceTree = "<group>"; };
 		0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libObjectiveCLevelDB.a"; sourceTree = "<group>"; };
+		0C0A94441D65544E00E00B3E /* MainTests_mm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTests_mm.m; sourceTree = "<group>"; };
 		0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLevelDBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCLevelDBTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCLevelDBTestTests.m; sourceTree = "<group>"; };
@@ -104,11 +104,12 @@
 		0C8B23CB1D652E680087AD72 /* ObjectiveCLevelDBTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C0A94131D65330F00E00B3E /* BaseTestClass.h */,
 				0C0A943A1D653A8800E00B3E /* Dummy.cpp */,
 				0C0A943B1D653A8800E00B3E /* Dummy.h */,
+				0C0A94131D65330F00E00B3E /* BaseTestClass.h */,
 				0C0A94141D65330F00E00B3E /* BaseTestClass.m */,
 				0C0A94281D65366400E00B3E /* MainTests.m */,
+				0C0A94441D65544E00E00B3E /* MainTests_mm.m */,
 				0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */,
 				0C8B23CE1D652E680087AD72 /* Info.plist */,
 			);
@@ -241,8 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8B23CD1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m in Sources */,
-				0C0A94291D65366400E00B3E /* MainTests.m in Sources */,
-				0C0A943C1D653A8800E00B3E /* Dummy.cpp in Sources */,
+				0C0A94461D65546900E00B3E /* MainTests.m in Sources */,
 				0C0A94151D65330F00E00B3E /* BaseTestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
