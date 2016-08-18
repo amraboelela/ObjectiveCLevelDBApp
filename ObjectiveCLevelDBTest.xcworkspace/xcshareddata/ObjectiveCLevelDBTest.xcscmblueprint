@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B83F3042E2C67C3A45D5751D7EAB63784CD5791E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D8AE9B5952F6EFD0E6063DBD3DC6ABB711A1D308" : 0,
+    "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21" : 0,
+    "B83F3042E2C67C3A45D5751D7EAB63784CD5791E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2712BD51-F521-49CF-8FAA-D30C85D572B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D8AE9B5952F6EFD0E6063DBD3DC6ABB711A1D308" : "CLevelDB\/",
+    "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21" : "ObjectiveCLevelDB\/",
+    "B83F3042E2C67C3A45D5751D7EAB63784CD5791E" : "ObjectiveCLevelDBTest\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjectiveCLevelDBTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ObjectiveCLevelDBTest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amraboelela\/ObjectiveCLevelDB",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amraboelela\/ObjectiveCLevelDBTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B83F3042E2C67C3A45D5751D7EAB63784CD5791E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amraboelela\/CLevelDB.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D8AE9B5952F6EFD0E6063DBD3DC6ABB711A1D308"
+    }
+  ]
+}
