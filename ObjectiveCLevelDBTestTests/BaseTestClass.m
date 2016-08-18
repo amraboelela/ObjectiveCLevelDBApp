@@ -25,10 +25,10 @@ static int db_i = 0;
     //});
     [db removeAllObjects];
     
-    db.encoder = ^ NSData * (LevelDBKey *key, id value) {
+    db.encoder = ^ NSData *(NSString *key, id value) {
         return [NSJSONSerialization dataWithJSONObject:value options:0 error:nil];
     };
-    db.decoder = ^ id (LevelDBKey *key, NSData *data) {
+    db.decoder = ^ id (NSString *key, NSData *data) {
         return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     };
 }
