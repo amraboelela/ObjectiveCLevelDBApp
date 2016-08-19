@@ -29,6 +29,8 @@ static int db_i = 0;
         return [NSJSONSerialization dataWithJSONObject:value options:0 error:nil];
     };
     db.decoder = ^ id (NSString *key, NSData *data) {
+        NSString *dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        id dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     };
 }
