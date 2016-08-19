@@ -48,9 +48,9 @@ static NSUInteger numberOfIterations = 2500;
     NSArray *keysFromDB = [db allKeys];
     
     XCTAssertEqualObjects(keysFromDB, keys, @"-[LevelDB allKeys] should return the list of keys used to insert data");
-    /*
+    
     [db removeAllObjects];
-    XCTAssertEqual([db allKeys], @[], @"The list of keys should be empty after removing all objects from the database");*/
+    XCTAssertEqual([db allKeys], @[], @"The list of keys should be empty after removing all objects from the database");
 }
 
 /*
