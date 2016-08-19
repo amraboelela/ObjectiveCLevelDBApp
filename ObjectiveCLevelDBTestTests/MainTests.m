@@ -37,7 +37,6 @@ static NSUInteger numberOfIterations = 2500;
     XCTAssertNil([db objectForKey:@"array1"], @"A key that was deleted in batch should return nil");
 }
 
-/*
 - (void)testKeysManipulation {
     id value = @{@"foo": @"bar"};
     
@@ -47,7 +46,7 @@ static NSUInteger numberOfIterations = 2500;
     
     NSArray *keys = @[ @"dict1", @"dict2", @"dict3" ];
     NSArray *keysFromDB = [db allKeys];
-    NSMutableArray *stringKeys = [NSMutableArray arrayWithCapacity:3];
+    /*NSMutableArray *stringKeys = [NSMutableArray arrayWithCapacity:3];
     [keysFromDB enumerateObjectsUsingBlock:^(NSData *obj, NSUInteger idx, BOOL *stop) {
         NSString *stringKey = [[NSString alloc] initWithBytes:obj.bytes length:obj.length encoding:NSUTF8StringEncoding];
         [stringKeys addObject:stringKey];
@@ -55,9 +54,10 @@ static NSUInteger numberOfIterations = 2500;
     XCTAssertEqualObjects(stringKeys, keys, @"-[LevelDB allKeys] should return the list of keys used to insert data");
     
     [db removeAllObjects];
-    XCTAssertEqual([db allKeys], @[], @"The list of keys should be empty after removing all objects from the database");
+    XCTAssertEqual([db allKeys], @[], @"The list of keys should be empty after removing all objects from the database");*/
 }
 
+/*
 - (void)testRemovingKeysWithPrefix {
     id value = @{@"foo": @"bar"};
     [db setObject:value forKey:@"dict1"];
