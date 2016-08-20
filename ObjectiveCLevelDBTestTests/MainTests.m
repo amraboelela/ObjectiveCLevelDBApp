@@ -12,7 +12,7 @@
 
 @end
 
-static NSUInteger numberOfIterations = 2500;
+static NSUInteger numberOfIterations = 170; //2500;
 
 @implementation MainTests
 
@@ -53,7 +53,6 @@ static NSUInteger numberOfIterations = 2500;
     XCTAssertEqual([db allKeys], @[], @"The list of keys should be empty after removing all objects from the database");
 }
 
-/*
 - (void)testRemovingKeysWithPrefix {
     id value = @{@"foo": @"bar"};
     [db setObject:value forKey:@"dict1"];
@@ -68,10 +67,10 @@ static NSUInteger numberOfIterations = 2500;
 
 - (void)testDictionaryManipulations {
     NSDictionary *objects = @{
-        @"key1": @[@1, @2],
-        @"key2": @{@"foo": @"bar"},
-        @"key3": @[@{}]
-    };
+                              @"key1": @[@1, @2],
+                              @"key2": @{@"foo": @"bar"},
+                              @"key3": @[@{}]
+                              };
     [db addEntriesFromDictionary:objects];
     NSArray *keys = @[@"key1", @"key2", @"key3"];
     
@@ -80,8 +79,7 @@ static NSUInteger numberOfIterations = 2500;
                               @"Objects should match between dictionary and db");
     
     keys = @[@"key1", @"key2", @"key9"];
-    NSDictionary *extractedObjects = [NSDictionary dictionaryWithObjects:[db objectsForKeys:keys
-                                                                             notFoundMarker:[NSNull null]]
+    NSDictionary *extractedObjects = [NSDictionary dictionaryWithObjects:[db objectsForKeys:keys notFoundMarker:[NSNull null]]
                                                                  forKeys:keys];
     for (id key in keys) {
         id val;
@@ -94,32 +92,20 @@ static NSUInteger numberOfIterations = 2500;
 - (void)testPredicateFiltering {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"price BETWEEN {25, 50}"];
     NSMutableArray *resultKeys = [NSMutableArray array];
-    
-    NSUInteger *keyDataPtr = malloc(sizeof(NSUInteger));
     NSInteger price;
     
-    NSComparator dataComparator = ^ NSComparisonResult (NSData *key1, NSData *key2) {
-        int cmp = memcmp(key1.bytes, key2.bytes, MIN(key1.length, key2.length));
-        
-        if (cmp == 0)
-            return NSOrderedSame;
-        else if (cmp > 0)
-            return NSOrderedDescending;
-        else
-            return NSOrderedAscending;
+    NSComparator dataComparator = ^ NSComparisonResult (NSString *key1, NSString *key2) {
+        return [key1 compare:key2]; //memcmp([key1 UTF8String], [key2 UTF8String], MIN(key1.length, key2.length)); //key1.bytes, key2.bytes, MIN(key1.length, key2.length));
     };
     
     arc4random_stir();
     for (int i=0; i<numberOfIterations; i++) {
-        *keyDataPtr = i;
-        NSData *keyData = [NSData dataWithBytes:keyDataPtr
-                                         length:sizeof(NSUInteger)];
-        
+        NSString *numberKey = [NSString stringWithFormat:@"%d", i];
         price = arc4random_uniform(100);
         if (price >= 25 && price <= 50) {
-            [resultKeys addObject:keyData];
+            [resultKeys addObject:numberKey];
         }
-        [db setObject:@{@"price": @(price)} forKey:keyData];
+        [db setObject:@{@"price": @(price)} forKey:numberKey];
     }
     [resultKeys sortUsingComparator:dataComparator];
     
@@ -137,8 +123,8 @@ static NSUInteger numberOfIterations = 2500;
                 startingAtKey:nil
           filteredByPredicate:predicate
                     andPrefix:nil
-                   usingBlock:^(LevelDBKey *key, BOOL *stop) {
-                       XCTAssertEqualObjects(NSDataFromLevelDBKey(key), resultKeys[i],
+                   usingBlock:^(NSString *key, BOOL *stop) {
+                       XCTAssertEqualObjects(key, resultKeys[i],
                                              @"Enumerating by filtering with a predicate should yield the expected keys");
                        i++;
                    }];
@@ -148,8 +134,8 @@ static NSUInteger numberOfIterations = 2500;
                 startingAtKey:nil
           filteredByPredicate:predicate
                     andPrefix:nil
-                   usingBlock:^(LevelDBKey *key, BOOL *stop) {
-                       XCTAssertEqualObjects(NSDataFromLevelDBKey(key), resultKeys[i],
+                   usingBlock:^(NSString *key, BOOL *stop) {
+                       XCTAssertEqualObjects(key, resultKeys[i],
                                              @"Enumerating backwards by filtering with a predicate should yield the expected keys");
                        i--;
                    }];
@@ -159,8 +145,8 @@ static NSUInteger numberOfIterations = 2500;
                           startingAtKey:nil
                     filteredByPredicate:predicate
                               andPrefix:nil
-                             usingBlock:^(LevelDBKey *key, id value, BOOL *stop) {
-                                 XCTAssertEqualObjects(NSDataFromLevelDBKey(key), resultKeys[i],
+                             usingBlock:^(NSString *key, id value, BOOL *stop) {
+                                 XCTAssertEqualObjects(key, resultKeys[i],
                                                        @"Enumerating keys and objects by filtering with a predicate should yield the expected keys");
                                  XCTAssertEqualObjects(value, allObjects[resultKeys[i]],
                                                        @"Enumerating keys and objects by filtering with a predicate should yield the expected values");
@@ -172,8 +158,8 @@ static NSUInteger numberOfIterations = 2500;
                           startingAtKey:nil
                     filteredByPredicate:predicate
                               andPrefix:nil
-                             usingBlock:^(LevelDBKey *key, id value, BOOL *stop) {
-                                 XCTAssertEqualObjects(NSDataFromLevelDBKey(key), resultKeys[i],
+                             usingBlock:^(NSString *key, id value, BOOL *stop) {
+                                 XCTAssertEqualObjects(key, resultKeys[i],
                                                        @"Enumerating keys and objects by filtering with a predicate should yield the expected keys");
                                  XCTAssertEqualObjects(value, allObjects[resultKeys[i]],
                                                        @"Enumerating keys and objects by filtering with a predicate should yield the expected values");
@@ -181,6 +167,7 @@ static NSUInteger numberOfIterations = 2500;
                              }];
 }
 
+/*
 - (NSArray *)nPairs:(NSUInteger)n {
     NSMutableArray  *pairs = [NSMutableArray array];
     
