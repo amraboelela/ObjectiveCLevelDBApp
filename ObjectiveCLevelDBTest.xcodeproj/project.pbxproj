@@ -15,7 +15,6 @@
 		0C0A94401D653B1400E00B3E /* libObjectiveCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */; };
 		0C0A94461D65546900E00B3E /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94281D65366400E00B3E /* MainTests.m */; };
 		0C630DF21D6660A000CF3617 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A943A1D653A8800E00B3E /* Dummy.cpp */; };
-		0C8B23CD1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */; };
 		0C8B23E01D652EFB0087AD72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23D91D652EFB0087AD72 /* AppDelegate.m */; };
 		0C8B23E31D652EFB0087AD72 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B23DC1D652EFB0087AD72 /* Info.plist */; };
 		0C8B23E41D652EFB0087AD72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DD1D652EFB0087AD72 /* main.m */; };
@@ -242,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8B23CD1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m in Sources */,
 				0C0A94461D65546900E00B3E /* MainTests.m in Sources */,
 				0C630DF21D6660A000CF3617 /* Dummy.cpp in Sources */,
 				0C0A94151D65330F00E00B3E /* BaseTestClass.m in Sources */,

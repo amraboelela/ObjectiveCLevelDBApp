@@ -12,7 +12,7 @@
 
 @end
 
-static NSUInteger numberOfIterations = 170; //2500;
+static NSUInteger numberOfIterations = 2500;
 
 @implementation MainTests
 
@@ -95,7 +95,7 @@ static NSUInteger numberOfIterations = 170; //2500;
     NSInteger price;
     
     NSComparator dataComparator = ^ NSComparisonResult (NSString *key1, NSString *key2) {
-        return [key1 compare:key2]; //memcmp([key1 UTF8String], [key2 UTF8String], MIN(key1.length, key2.length)); //key1.bytes, key2.bytes, MIN(key1.length, key2.length));
+        return [key1 compare:key2];
     };
     
     arc4random_stir();
@@ -167,7 +167,6 @@ static NSUInteger numberOfIterations = 170; //2500;
                              }];
 }
 
-/*
 - (NSArray *)nPairs:(NSUInteger)n {
     NSMutableArray  *pairs = [NSMutableArray array];
     
@@ -201,13 +200,12 @@ static NSUInteger numberOfIterations = 170; //2500;
     
     // Test that enumerating the whole set yields keys in the correct orders
     r = 0;
-    [db enumerateKeysUsingBlock:^(LevelDBKey *lkey, BOOL *stop) {
+    [db enumerateKeysUsingBlock:^(NSString *lkey, BOOL *stop) {
         NSArray *pair = pairs[r];
         key = pair[0];
         value = pair[1];
         
-        XCTAssertEqualObjects(key, NSStringFromLevelDBKey(lkey),
-                              @"Keys should be equal, given the ordering worked");
+        XCTAssertEqualObjects(key, lkey, @"Keys should be equal, given the ordering worked");
         r++;
     }];
     
@@ -217,13 +215,12 @@ static NSUInteger numberOfIterations = 170; //2500;
                 startingAtKey:pairs[r][0]
           filteredByPredicate:nil
                     andPrefix:nil
-                   usingBlock:^(LevelDBKey *lkey, BOOL *stop) {
+                   usingBlock:^(NSString *lkey, BOOL *stop) {
                        NSArray *pair = pairs[r];
                        key = pair[0];
                        value = pair[1];
                        
-                       XCTAssertEqualObjects(key, NSStringFromLevelDBKey(lkey),
-                                             @"Keys should be equal, given the ordering worked");
+                       XCTAssertEqualObjects(key, lkey, @"Keys should be equal, given the ordering worked");
                        r++;
                    }];
 }
@@ -241,11 +238,11 @@ static NSUInteger numberOfIterations = 170; //2500;
                 startingAtKey:nil
           filteredByPredicate:nil
                     andPrefix:nil
-                   usingBlock:^(LevelDBKey *lkey, BOOL *stop) {
+                   usingBlock:^(NSString *lkey, BOOL *stop) {
                        NSArray *pair = pairs[r];
                        key = pair[0];
                        value = pair[1];
-                       XCTAssertEqualObjects(key, NSStringFromLevelDBKey(lkey),
+                       XCTAssertEqualObjects(key, lkey,
                                              @"Keys should be equal, given the ordering worked");
                        r--;
                    }];
@@ -256,11 +253,11 @@ static NSUInteger numberOfIterations = 170; //2500;
                 startingAtKey:pairs[r][0]
           filteredByPredicate:nil
                     andPrefix:nil
-                   usingBlock:^(LevelDBKey *lkey, BOOL *stop) {
+                   usingBlock:^(NSString *lkey, BOOL *stop) {
                        NSArray *pair = pairs[r];
                        key = pair[0];
                        value = pair[1];
-                       XCTAssertEqualObjects(key, NSStringFromLevelDBKey(lkey),
+                       XCTAssertEqualObjects(key, lkey,
                                              @"Keys should be equal, given the ordering worked");
                        r--;
                    }];
@@ -284,15 +281,15 @@ static NSUInteger numberOfIterations = 170; //2500;
                 startingAtKey:@"test:3"
           filteredByPredicate:nil
                     andPrefix:@"test"
-                   usingBlock:^(LevelDBKey *lkey, BOOL *stop) {
+                   usingBlock:^(NSString *lkey, BOOL *stop) {
                        NSString *key = [NSString stringWithFormat:@"test:%d", i];
-                       XCTAssertEqualObjects(NSStringFromLevelDBKey(lkey), key,
-                                             @"Keys should be restricted to the prefixed region");
+                       XCTAssertEqualObjects(lkey, key, @"Keys should be restricted to the prefixed region");
                        i--;
                    }];
     XCTAssertEqual(i, 0, @"");
 }
 
+/*
 - (void)testPrefixedEnumerations {
     id(^valueFor)(int) = ^ id (int i) { return @{ @"key": @(i) }; };
     NSDictionary *pairs = @{

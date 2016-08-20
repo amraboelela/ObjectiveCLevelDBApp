@@ -8,14 +8,14 @@
 
 #import "BaseTestClass.h"
 
-//dispatch_queue_t lvldb_test_queue;
+dispatch_queue_t lvldb_test_queue;
 
 @implementation BaseTestClass 
 
 static int db_i = 0;
 
 + (void)setUp {
-    //lvldb_test_queue = dispatch_queue_create("Create DB", DISPATCH_QUEUE_SERIAL);
+    lvldb_test_queue = dispatch_queue_create("Create DB", DISPATCH_QUEUE_SERIAL);
 }
 
 - (void)setUp {
@@ -29,8 +29,8 @@ static int db_i = 0;
         return [NSJSONSerialization dataWithJSONObject:value options:0 error:nil];
     };
     db.decoder = ^ id (NSString *key, NSData *data) {
-        NSString *dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        id dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        //NSString *dataStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //id dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     };
 }
