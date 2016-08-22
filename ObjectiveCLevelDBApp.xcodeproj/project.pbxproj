@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C0A94111D65329200E00B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A940F1D65329200E00B3E /* LaunchScreen.storyboard */; };
 		0C0A94121D65329200E00B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A94101D65329200E00B3E /* Main.storyboard */; };
-		0C0A94151D65330F00E00B3E /* BaseTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94141D65330F00E00B3E /* BaseTestClass.m */; };
 		0C0A94381D653A3100E00B3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DF1D652EFB0087AD72 /* ViewController.m */; };
 		0C0A943F1D653B1400E00B3E /* libCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943D1D653B1400E00B3E /* libCLevelDB.a */; };
 		0C0A94401D653B1400E00B3E /* libObjectiveCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */; };
-		0C0A94461D65546900E00B3E /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A94281D65366400E00B3E /* MainTests.m */; };
-		0C630DF21D6660A000CF3617 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A943A1D653A8800E00B3E /* Dummy.cpp */; };
+		0C1E8A091D6A9A21005B42E3 /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E8A001D6A998B005B42E3 /* MainTests.m */; };
+		0C1E8A0C1D6A9A43005B42E3 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E89FC1D6A998B005B42E3 /* Dummy.cpp */; };
+		0C1E8A0D1D6A9A47005B42E3 /* BaseTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E89FB1D6A998B005B42E3 /* BaseTestClass.m */; };
+		0C1E8A0E1D6A9A5E005B42E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E89FE1D6A998B005B42E3 /* Info.plist */; };
+		0C88F9971D6A9AD1003FD3A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B23DC1D652EFB0087AD72 /* Info.plist */; };
 		0C8B23E01D652EFB0087AD72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23D91D652EFB0087AD72 /* AppDelegate.m */; };
-		0C8B23E31D652EFB0087AD72 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B23DC1D652EFB0087AD72 /* Info.plist */; };
 		0C8B23E41D652EFB0087AD72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DD1D652EFB0087AD72 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -33,18 +34,18 @@
 /* Begin PBXFileReference section */
 		0C0A940F1D65329200E00B3E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Sources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C0A94101D65329200E00B3E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Sources/Main.storyboard; sourceTree = "<group>"; };
-		0C0A94131D65330F00E00B3E /* BaseTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTestClass.h; sourceTree = "<group>"; };
-		0C0A94141D65330F00E00B3E /* BaseTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTestClass.m; sourceTree = "<group>"; };
-		0C0A94281D65366400E00B3E /* MainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTests.m; sourceTree = "<group>"; };
-		0C0A943A1D653A8800E00B3E /* Dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy.cpp; sourceTree = "<group>"; };
-		0C0A943B1D653A8800E00B3E /* Dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
 		0C0A943D1D653B1400E00B3E /* libCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libCLevelDB.a"; sourceTree = "<group>"; };
 		0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libObjectiveCLevelDB.a"; sourceTree = "<group>"; };
-		0C0A94441D65544E00E00B3E /* MainTests_mm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTests_mm.m; sourceTree = "<group>"; };
-		0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLevelDBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCLevelDBTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCLevelDBTestTests.m; sourceTree = "<group>"; };
-		0C8B23CE1D652E680087AD72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1E89FA1D6A998B005B42E3 /* BaseTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTestClass.h; path = ObjectiveCLevelDBAppTests/BaseTestClass.h; sourceTree = SOURCE_ROOT; };
+		0C1E89FB1D6A998B005B42E3 /* BaseTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTestClass.m; path = ObjectiveCLevelDBAppTests/BaseTestClass.m; sourceTree = SOURCE_ROOT; };
+		0C1E89FC1D6A998B005B42E3 /* Dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dummy.cpp; path = ObjectiveCLevelDBAppTests/Dummy.cpp; sourceTree = SOURCE_ROOT; };
+		0C1E89FD1D6A998B005B42E3 /* Dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dummy.h; path = ObjectiveCLevelDBAppTests/Dummy.h; sourceTree = SOURCE_ROOT; };
+		0C1E89FE1D6A998B005B42E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ObjectiveCLevelDBAppTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		0C1E89FF1D6A998B005B42E3 /* MainTests_mm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTests_mm.m; path = ObjectiveCLevelDBAppTests/MainTests_mm.m; sourceTree = SOURCE_ROOT; };
+		0C1E8A001D6A998B005B42E3 /* MainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTests.m; path = ObjectiveCLevelDBAppTests/MainTests.m; sourceTree = SOURCE_ROOT; };
+		0C1E8A011D6A998B005B42E3 /* ObjectiveCLevelDBAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCLevelDBAppTests.m; path = ObjectiveCLevelDBAppTests/ObjectiveCLevelDBAppTests.m; sourceTree = SOURCE_ROOT; };
+		0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLevelDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCLevelDBApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8B23D81D652EFB0087AD72 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = "<group>"; };
 		0C8B23D91D652EFB0087AD72 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sources/AppDelegate.m; sourceTree = "<group>"; };
 		0C8B23DC1D652EFB0087AD72 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 			children = (
 				0C0A94411D653B5200E00B3E /* Libraries */,
 				0C8B23D71D652EEF0087AD72 /* Sources */,
-				0C8B23CB1D652E680087AD72 /* ObjectiveCLevelDBTestTests */,
+				0C8B23CB1D652E680087AD72 /* ObjectiveCLevelDBAppTests */,
 				0C8B23B01D652E680087AD72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,24 +96,25 @@
 		0C8B23B01D652E680087AD72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBTest.app */,
-				0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBTestTests.xctest */,
+				0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBApp.app */,
+				0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBApp.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C8B23CB1D652E680087AD72 /* ObjectiveCLevelDBTestTests */ = {
+		0C8B23CB1D652E680087AD72 /* ObjectiveCLevelDBAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C0A943A1D653A8800E00B3E /* Dummy.cpp */,
-				0C0A943B1D653A8800E00B3E /* Dummy.h */,
-				0C0A94131D65330F00E00B3E /* BaseTestClass.h */,
-				0C0A94141D65330F00E00B3E /* BaseTestClass.m */,
-				0C0A94281D65366400E00B3E /* MainTests.m */,
-				0C0A94441D65544E00E00B3E /* MainTests_mm.m */,
-				0C8B23CC1D652E680087AD72 /* ObjectiveCLevelDBTestTests.m */,
-				0C8B23CE1D652E680087AD72 /* Info.plist */,
+				0C1E89FE1D6A998B005B42E3 /* Info.plist */,
+				0C1E89FA1D6A998B005B42E3 /* BaseTestClass.h */,
+				0C1E89FB1D6A998B005B42E3 /* BaseTestClass.m */,
+				0C1E89FC1D6A998B005B42E3 /* Dummy.cpp */,
+				0C1E89FD1D6A998B005B42E3 /* Dummy.h */,
+				0C1E89FF1D6A998B005B42E3 /* MainTests_mm.m */,
+				0C1E8A001D6A998B005B42E3 /* MainTests.m */,
+				0C1E8A011D6A998B005B42E3 /* ObjectiveCLevelDBAppTests.m */,
 			);
+			name = ObjectiveCLevelDBAppTests;
 			path = ObjectiveCLevelDBTestTests;
 			sourceTree = "<group>";
 		};
@@ -134,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBTest */ = {
+		0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C8B23D11D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBTest" */;
+			buildConfigurationList = 0C8B23D11D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBApp" */;
 			buildPhases = (
 				0C8B23AB1D652E680087AD72 /* Sources */,
 				0C8B23AC1D652E680087AD72 /* Frameworks */,
@@ -146,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = ObjectiveCLevelDBTest;
+			name = ObjectiveCLevelDBApp;
 			productName = ObjectiveCLevelDBTest;
-			productReference = 0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBTest.app */;
+			productReference = 0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0C8B23C71D652E680087AD72 /* ObjectiveCLevelDBTestTests */ = {
+		0C8B23C71D652E680087AD72 /* ObjectiveCLevelDBAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C8B23D41D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBTestTests" */;
+			buildConfigurationList = 0C8B23D41D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBAppTests" */;
 			buildPhases = (
 				0C8B23C41D652E680087AD72 /* Sources */,
 				0C8B23C51D652E680087AD72 /* Frameworks */,
@@ -164,9 +166,9 @@
 			dependencies = (
 				0C8B23CA1D652E680087AD72 /* PBXTargetDependency */,
 			);
-			name = ObjectiveCLevelDBTestTests;
+			name = ObjectiveCLevelDBAppTests;
 			productName = ObjectiveCLevelDBTestTests;
-			productReference = 0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBTestTests.xctest */;
+			productReference = 0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBApp.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C8B23AA1D652E680087AD72 /* Build configuration list for PBXProject "ObjectiveCLevelDBTest" */;
+			buildConfigurationList = 0C8B23AA1D652E680087AD72 /* Build configuration list for PBXProject "ObjectiveCLevelDBApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -200,8 +202,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBTest */,
-				0C8B23C71D652E680087AD72 /* ObjectiveCLevelDBTestTests */,
+				0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBApp */,
+				0C8B23C71D652E680087AD72 /* ObjectiveCLevelDBAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0A94111D65329200E00B3E /* LaunchScreen.storyboard in Resources */,
-				0C8B23E31D652EFB0087AD72 /* Info.plist in Resources */,
 				0C0A94121D65329200E00B3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +222,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C88F9971D6A9AD1003FD3A9 /* Info.plist in Resources */,
+				0C1E8A0E1D6A9A5E005B42E3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0A94461D65546900E00B3E /* MainTests.m in Sources */,
-				0C630DF21D6660A000CF3617 /* Dummy.cpp in Sources */,
-				0C0A94151D65330F00E00B3E /* BaseTestClass.m in Sources */,
+				0C1E8A091D6A9A21005B42E3 /* MainTests.m in Sources */,
+				0C1E8A0C1D6A9A43005B42E3 /* Dummy.cpp in Sources */,
+				0C1E8A0D1D6A9A47005B42E3 /* BaseTestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		0C8B23CA1D652E680087AD72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBTest */;
+			target = 0C8B23AE1D652E680087AD72 /* ObjectiveCLevelDBApp */;
 			targetProxy = 0C8B23C91D652E680087AD72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -349,12 +352,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Classes;
+				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Sources;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObjectiveCLevelDBApp;
 			};
 			name = Debug;
 		};
@@ -365,12 +368,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
-				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Classes;
+				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Sources;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObjectiveCLevelDBApp;
 			};
 			name = Release;
 		};
@@ -378,12 +381,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Classes;
-				INFOPLIST_FILE = ObjectiveCLevelDBTestTests/Info.plist;
+				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Sources;
+				INFOPLIST_FILE = ObjectiveCLevelDBAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCLevelDBTest.app/ObjectiveCLevelDBTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBAppTests;
+				PRODUCT_NAME = ObjectiveCLevelDBApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCLevelDBApp.app/ObjectiveCLevelDBApp";
 			};
 			name = Debug;
 		};
@@ -391,19 +394,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Classes;
-				INFOPLIST_FILE = ObjectiveCLevelDBTestTests/Info.plist;
+				HEADER_SEARCH_PATHS = $SRCROOT/../ObjectiveCLevelDB/Sources;
+				INFOPLIST_FILE = ObjectiveCLevelDBAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCLevelDBTest.app/ObjectiveCLevelDBTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amr.ObjectiveCLevelDBAppTests;
+				PRODUCT_NAME = ObjectiveCLevelDBApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCLevelDBApp.app/ObjectiveCLevelDBApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C8B23AA1D652E680087AD72 /* Build configuration list for PBXProject "ObjectiveCLevelDBTest" */ = {
+		0C8B23AA1D652E680087AD72 /* Build configuration list for PBXProject "ObjectiveCLevelDBApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C8B23CF1D652E680087AD72 /* Debug */,
@@ -412,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C8B23D11D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBTest" */ = {
+		0C8B23D11D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C8B23D21D652E680087AD72 /* Debug */,
@@ -421,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C8B23D41D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBTestTests" */ = {
+		0C8B23D41D652E680087AD72 /* Build configuration list for PBXNativeTarget "ObjectiveCLevelDBAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C8B23D51D652E680087AD72 /* Debug */,
