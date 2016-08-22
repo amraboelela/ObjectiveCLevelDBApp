@@ -10,12 +10,12 @@
 		0C0A94111D65329200E00B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A940F1D65329200E00B3E /* LaunchScreen.storyboard */; };
 		0C0A94121D65329200E00B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A94101D65329200E00B3E /* Main.storyboard */; };
 		0C0A94381D653A3100E00B3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DF1D652EFB0087AD72 /* ViewController.m */; };
-		0C0A943F1D653B1400E00B3E /* libCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943D1D653B1400E00B3E /* libCLevelDB.a */; };
 		0C0A94401D653B1400E00B3E /* libObjectiveCLevelDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */; };
 		0C1E8A091D6A9A21005B42E3 /* MainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E8A001D6A998B005B42E3 /* MainTests.m */; };
 		0C1E8A0C1D6A9A43005B42E3 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E89FC1D6A998B005B42E3 /* Dummy.cpp */; };
 		0C1E8A0D1D6A9A47005B42E3 /* BaseTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E89FB1D6A998B005B42E3 /* BaseTestClass.m */; };
 		0C1E8A0E1D6A9A5E005B42E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E89FE1D6A998B005B42E3 /* Info.plist */; };
+		0C35C3FC1D6B316D00686F78 /* CLevelDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C35C3FB1D6B316D00686F78 /* CLevelDB.framework */; };
 		0C88F9971D6A9AD1003FD3A9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C8B23DC1D652EFB0087AD72 /* Info.plist */; };
 		0C8B23E01D652EFB0087AD72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23D91D652EFB0087AD72 /* AppDelegate.m */; };
 		0C8B23E41D652EFB0087AD72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B23DD1D652EFB0087AD72 /* main.m */; };
@@ -34,7 +34,6 @@
 /* Begin PBXFileReference section */
 		0C0A940F1D65329200E00B3E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Sources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C0A94101D65329200E00B3E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Sources/Main.storyboard; sourceTree = "<group>"; };
-		0C0A943D1D653B1400E00B3E /* libCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libCLevelDB.a"; sourceTree = "<group>"; };
 		0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveCLevelDB.a; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBTest-cyhtizyrtvkhymelhplcjukzhifh/Build/Products/Debug-iphonesimulator/libObjectiveCLevelDB.a"; sourceTree = "<group>"; };
 		0C1E89FA1D6A998B005B42E3 /* BaseTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTestClass.h; path = ObjectiveCLevelDBAppTests/BaseTestClass.h; sourceTree = SOURCE_ROOT; };
 		0C1E89FB1D6A998B005B42E3 /* BaseTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTestClass.m; path = ObjectiveCLevelDBAppTests/BaseTestClass.m; sourceTree = SOURCE_ROOT; };
@@ -44,6 +43,7 @@
 		0C1E89FF1D6A998B005B42E3 /* MainTests_mm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTests_mm.m; path = ObjectiveCLevelDBAppTests/MainTests_mm.m; sourceTree = SOURCE_ROOT; };
 		0C1E8A001D6A998B005B42E3 /* MainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTests.m; path = ObjectiveCLevelDBAppTests/MainTests.m; sourceTree = SOURCE_ROOT; };
 		0C1E8A011D6A998B005B42E3 /* ObjectiveCLevelDBAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCLevelDBAppTests.m; path = ObjectiveCLevelDBAppTests/ObjectiveCLevelDBAppTests.m; sourceTree = SOURCE_ROOT; };
+		0C35C3FB1D6B316D00686F78 /* CLevelDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CLevelDB.framework; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveCLevelDBApp-hihjqlbvzsvowbdqsorppylpdgkc/Build/Products/Debug-iphonesimulator/CLevelDB.framework"; sourceTree = "<group>"; };
 		0C8B23AF1D652E680087AD72 /* ObjectiveCLevelDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCLevelDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8B23C81D652E680087AD72 /* ObjectiveCLevelDBApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCLevelDBApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8B23D81D652EFB0087AD72 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0A943F1D653B1400E00B3E /* libCLevelDB.a in Frameworks */,
+				0C35C3FC1D6B316D00686F78 /* CLevelDB.framework in Frameworks */,
 				0C0A94401D653B1400E00B3E /* libObjectiveCLevelDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +77,7 @@
 		0C0A94411D653B5200E00B3E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				0C0A943D1D653B1400E00B3E /* libCLevelDB.a */,
+				0C35C3FB1D6B316D00686F78 /* CLevelDB.framework */,
 				0C0A943E1D653B1400E00B3E /* libObjectiveCLevelDB.a */,
 			);
 			name = Libraries;
