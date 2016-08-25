@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B83F3042E2C67C3A45D5751D7EAB63784CD5791E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21" : 0,
+    "B83F3042E2C67C3A45D5751D7EAB63784CD5791E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EA5CF269-2F57-4D65-8774-7A452137906E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21" : "ObjectiveCLevelDB\/",
+    "B83F3042E2C67C3A45D5751D7EAB63784CD5791E" : "ObjectiveCLevelDBApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjectiveCLevelDBApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ObjectiveCLevelDBApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amraboelela\/ObjectiveCLevelDB",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FC5ADFBB93ADD939DBA12435021DFB89B1EBA21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amraboelela\/ObjectiveCLevelDBApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B83F3042E2C67C3A45D5751D7EAB63784CD5791E"
+    }
+  ]
+}

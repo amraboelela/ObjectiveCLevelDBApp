@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/aaboelela/rengo/ObjectiveCLevelDBApp/ObjectiveCLevelDBApp.xcodeproj">
+      location = "group:ObjectiveCLevelDBApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../ObjectiveCLevelDB/ObjectiveCLevelDB.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../CLevelDB/CLevelDB.xcodeproj">
+      location = "group:../../rengo/CLevelDB/CLevelDB.xcodeproj">
    </FileRef>
 </Workspace>
